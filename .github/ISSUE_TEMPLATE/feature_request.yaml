@@ -1,0 +1,19 @@
+name: Propozycja
+description: Zaproponuj nową funkcjonalność lub ulepszenie
+title: "[Propozycja] Opis pomysłu"
+labels: [Propozycja]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Opis pomysłu
+      placeholder: Co chcesz, aby zostało dodane lub ulepszone?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Uzasadnienie
+      description: Dlaczego ta zmiana byłaby przydatna?
+      placeholder: np. Ułatwiłoby to...

@@ -1,0 +1,41 @@
+name: Błąd
+description: Zgłoś błąd lub problem
+title: "[BUG] Opis problemu"
+labels: [Bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Dziękujemy za zgłoszenie błędu. Wypełnij proszę poniższe informacje.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Krótkie podsumowanie
+      placeholder: Opisz problem w jednym zdaniu
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Kroki do odtworzenia
+      description: Jak odtworzyć błąd krok po kroku.
+      placeholder: |
+        1. Przejdź do...
+        2. Kliknij...
+        3. Zobaczysz błąd...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Oczekiwane zachowanie
+      placeholder: Co powinno się stać?
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Rzeczywiste zachowanie
+      placeholder: Co się faktycznie stało?
